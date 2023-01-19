@@ -35,12 +35,18 @@ int main(int argc, char *argv[]) {
 	else
 	//ýf bloðundaki kosul karþýlanmadýðýnda else blogu calýsarak bakiye yetersiz uyarýsý verecektir.
 	{
-		printf("Hesabinizda Bunun Icin Yeterli Bakiye Bulunmuyor\n");
-		printf("Veya cekmek istediginiz rakam %.2f den daha fazla\n",limit);
-	}
-	
-	
+		if(cekilecek<bakiye)
+		{
+			printf("Hesabinizda Islem Icin Yeterli Bakiye Bulunmuyor\n");
+		}
+		if(cekilecek>limit)
+		{
+			printf("Cekmek istediginiz rakam gunluk limitiniz olan %.2f den daha fazla\n",limit);
+		}
 		
-	printf("Program Sonlandi.\nTesekkurler");
+	}
+		
+	printf("Program Sonlandi.");
+	
 	return 0;
 }
