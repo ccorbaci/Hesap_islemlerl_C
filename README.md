@@ -1,1 +1,1 @@
-# Hesap_islemlerl_C
+# Basit bankacılık işlemlerinin taklit edildiği örnek çalışma projesidir.
